@@ -5,7 +5,7 @@ const isDev = process.env.NODE_ENV !== 'production';
 const config = require('../bottender.config');
 
 if (isDev) {
-  nodemon(`--exec "node server.js"`)
+  nodemon(`--exec "node server/index.js"`)
     .on('start', () => {
       console.log('App has started');
       console.log(`> Ready on http://localhost:${port}`);

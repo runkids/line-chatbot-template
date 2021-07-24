@@ -1,14 +1,6 @@
-const { router, line } = require('bottender/router');
+const { router } = require('bottender/router');
+const routes = require('./channels/routes');
 
 module.exports = async function App() {
-  return router([line.message(handleMessage)]);
+  return router(routes);
 };
-
-async function handleMessage(context) {
-  await context.reply([
-    {
-      type: 'text',
-      text: 'Hello!',
-    },
-  ]);
-}
