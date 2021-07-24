@@ -1,0 +1,7 @@
+cron:
+  # - description: "Health Check"
+  #   url: /health
+  #   schedule: every day 00:00
+  #   retry_parameters:
+  #     min_backoff_seconds: 2.5
+  #     max_doublings: 5
